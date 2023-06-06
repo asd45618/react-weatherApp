@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+body {
+    background: url("/public/weatherBackground.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weatherBox {
+    width: 40em;
+    border: 3px solid white;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: azure;
+    margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.locationButton {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    border: 3px solid steelblue;
+    border-radius: 30px;
+    background-color:steelblue ;
 }
 
-.App-link {
-  color: #61dafb;
+.cityButton {
+    margin: 2em 1em 2em 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cityButton:focus {
+    background-color: lightgray;
 }
